@@ -5,10 +5,17 @@ body{
     font-family: SF Pro Display, sans-serif;
 }
 @font-face {
-    font-family: "Blend";
-    src: url("doc/Blend_ITALIC.otf") format("otf"),
-         url("doc/Blend_REGULAR.otf") format("otf");
-  }
+    font-family: Blend;
+    src: 
+         url("doc/Blend_REGULAR.otf") format("opentype");
+}
+
+@font-face{
+    font-family: Blend;
+    font-style: italic;
+    src: url("doc/Blend_ITALIC.otf") format("opentype");
+}
+
 #featureDiv{
     /* margin:0 auto; */
     text-align: center;
