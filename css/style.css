@@ -1,46 +1,48 @@
+/* *{border:1px red solid;} */
+
 body{
     margin:0;
     font-family: SF Pro Display, sans-serif;
 }
-
 #featureDiv{
     /* margin:0 auto; */
     text-align: center;
     padding-top: 4vh;
-    margin-bottom:100px;
+    margin-bottom:200px;
 }
 #feature{
+    width:90%;
     height:90vh;
 }
 
-
-#marqueeWrap{
-    overflow: hidden;
-    /* box-sizing: border-box; */
-}
-#marquee {
-    /* display: inline-block; */
-    /* padding-left: 100%; */
-    animation: marquee 2s linear infinite;
-}
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
+.font-name{
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 300;
+    margin:0;
+    /* margin-left:10vw; */
+    padding:0;
+    text-align: center;
+    left:auto;
+    right:auto;
+    /* color:rgb(217, 255, 0); */
 }
 
 
-
-#n1{
+.fontTitle{
     width:100%;
     position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid white;
 }
 
-#line1{
+.line1{
     transform: rotate(1.5deg);
     margin-bottom: 50px;
     border:1px solid black;
 }
-#line2{
+.line2{
     transform: rotate(-1deg);
     margin-top: 50px;
     border:1px solid black;
@@ -51,14 +53,66 @@ body{
     margin-left: auto;    
     margin-right: auto;    
     display: block;
+    z-index: 10;
+    position: relative;
 }
 #name-blend:hover{
-    /* background-image: url('img/n1-hero.png'); */
+    background-color:rgb(217, 255, 0);
+    background-color:rgb(153, 255, 0);
     cursor: pointer;
 }
 #n1-hero{
     width:20vw;
     position: absolute;
     right:10vw;
-    bottom:-12vw;
+    bottom:-10vw;
+    z-index: 1;
+}
+#n1-art{
+    position:absolute;
+    transform:rotate(-90deg);
+    width:40vw;
+    left:30vw;
+    right:30vw;
+    top:-15vw;
+    z-index: 1;
+    display:none;
+}
+#n1-plastik{
+    width:15vw;
+    left:10vw;
+    top:0%;
+    /* transform:rotate(-90deg); */
+    position:absolute;
+    z-index: 2;
+    display:none;
+}
+#n1-maket{
+    position:absolute;
+    top:0;
+    right:3vw;
+    width:15vw;
+    transform: rotate(-25deg);
+    z-index: 0;
+    display:none;
+}
+#n1-video{
+    position: absolute;
+    width:15vw;
+    right:20vw;
+    display:none;
+    z-index:1;
+}
+
+.soon{
+    width: 90vw;
+    height:10vw;
+    border:1vw rgb(255, 102, 0) solid;
+    position: absolute;
+    top:-5vw;
+    left:50%;
+    margin-left:-46vw;
+}
+.empty{
+    display:block;
 }
