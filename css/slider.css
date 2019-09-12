@@ -1,0 +1,94 @@
+#container{
+    /* margin-top:100px; */
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns:   90vw auto;
+    grid-template-columns: 90vw auto;
+}
+
+#grid2{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-rows: 75vh 25vh;
+    grid-template-rows: 75vh 25vh;
+}
+#grid2 > svg{
+    height:60vh;
+}
+
+#grid3{
+    background-color:#FF6C3B;
+
+    display:-webkit-box;
+
+    display:-ms-flexbox;
+
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.abc{
+    font-size:28pt;
+    text-align: center;
+    cursor: pointer;
+}
+.spanHover{
+    background:black;
+    color:white;
+}
+.abc > span:hover{
+    color:white;
+}
+.insertDiv{
+    height:75vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.insertDiv > svg >*{
+    mix-blend-mode: multiply;
+}
+
+#row1{
+    overflow: hidden;
+}
+#row2{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+
+.slider{
+    width:50vw;
+    height:20px;
+    background: -webkit-gradient(linear, left top, right top, from(#A9FF29), color-stop(50%, #76FECC), to(#3B3BFF));
+    background: -o-linear-gradient(left, #A9FF29 0%, #76FECC 50%, #3B3BFF 100%);
+    background: linear-gradient(90deg, #A9FF29 0%, #76FECC 50%, #3B3BFF 100%);
+    -webkit-appearance: none;
+    outline:none;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:15px solid black;
+    background:white;
+}
