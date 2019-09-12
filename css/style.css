@@ -6,14 +6,16 @@ body{
 }
 @font-face {
     font-family: Blend;
-    src: 
-         url("doc/Blend_REGULAR.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    src: url("doc/Blend_REGULAR.woff") format("woff");
 }
 
 @font-face{
     font-family: Blend;
     font-style: italic;
-    src: url("doc/Blend_ITALIC.otf") format("opentype");
+    font-weight: normal;
+    src: url("doc/Blend_ITALIC.woff") format("woff");
 }
 
 #featureDiv{
