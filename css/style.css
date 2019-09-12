@@ -8,14 +8,14 @@ body{
     font-family: Blend;
     font-style: normal;
     font-weight: normal;
-    src: url("doc/Blend_REGULAR.woff") format("woff");
+    src: url('/doc/Blend_REGULAR.woff') format("woff");
 }
 
 @font-face{
     font-family: Blend;
     font-style: italic;
     font-weight: normal;
-    src: url("doc/Blend_ITALIC.woff") format("woff");
+    src: url('/doc/Blend_ITALIC.woff') format("woff");
 }
 
 #featureDiv{
