@@ -9,10 +9,14 @@ body{
     text-align: center;
     padding-top: 4vh;
     margin-bottom:200px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    height:100vh;
 }
 #feature{
-    width:90%;
-    height:90vh;
+    width:50%;
+    /* height:90vh; */
 }
 
 .font-name{
