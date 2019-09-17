@@ -176,14 +176,14 @@ function noneBlend(){
   }
 }
 
-document.getElementById('info').addEventListener('mouseover', function(){
-  document.getElementById('infoTxt').style.opacity='1';
-  document.getElementById('infoTxt').style.transform='scale(1)';
-})
-document.getElementById('info').addEventListener('mouseout', function(){
-  document.getElementById('infoTxt').style.opacity='0';
-  document.getElementById('infoTxt').style.transform='scale(0)';
-})
+// document.getElementById('info').addEventListener('mouseover', function(){
+//   document.getElementById('infoTxt').style.opacity='1';
+//   document.getElementById('infoTxt').style.transform='scale(1)';
+// })
+// document.getElementById('info').addEventListener('mouseout', function(){
+//   document.getElementById('infoTxt').style.opacity='0';
+//   document.getElementById('infoTxt').style.transform='scale(0)';
+// })
 
 
 
