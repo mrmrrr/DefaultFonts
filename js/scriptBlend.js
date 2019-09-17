@@ -1,15 +1,12 @@
-
-// var elt = document.getElementById('p61'); 
-// elt.style.transformBox='fill-box'
-// elt.style.transformOrigin='50% 50%';
-// elt.addEventListener('animationend', function(){
-//   elt.style.animation = 'end 2s infinite backwards';
-// });
-
 var btn1 = document.getElementById('btn1');
 var btn2 = document.getElementById('btn2');
 var btn3 = document.getElementById('btn3');
+var btn1_ = document.getElementById('btn1_');
+var btn2_ = document.getElementById('btn2_');
+var btn3_ = document.getElementById('btn3_');
 var cName = btn3.className;
+var cName_ = btn3_.className;
+
 
 var inp = document.getElementById('inp');
 var inp2 = document.getElementById('inp2');
@@ -19,16 +16,6 @@ inp2.addEventListener('keyup', function(){
   document.getElementById('inp').value = inp2.value;
   inp.scrollLeft = inp.scrollWidth;
 })
-
-// if(positionInp2.top > 0){
-//   inp2.addEventListener('focusout', function(){
-//     inp2.focus();
-//     inp2.setSelectionRange(inp.value.length, inp.value.length);    
-//   });
-// }else{
-//   console.log('меньше нуля');
-// }
-
 
 window.addEventListener('scroll', function(){
   var count = 0;
@@ -52,12 +39,9 @@ window.addEventListener('scroll', function(){
   
   if(document.getElementById('inp2').getBoundingClientRect().top > 0){
     inp2.addEventListener('focusout', function(){
-      // inp2.setSelectionRange(inp.value.length, inp.value.length);   
       inp2.scrollLeft = inp2.scrollWidth;
-
     });
   }
-  
 })
 
 function btnStroke(){
@@ -72,7 +56,21 @@ function btnStroke(){
       inp.style.webkitTextStroke='2px black';
       inp2.style.webkitTextStroke='2px black';
     };
+  
+// ********mobile
+  if(btn3_.getAttribute('class')==cName_){
+    btn3_.setAttribute('class','_btn3Black');
+    document.getElementById('svgAlphabet1').style.strokeWidth='0px';
+    document.getElementById('svgAlphabet2').style.strokeWidth='0px';
+  }else
+    if(btn3_.getAttribute('class')=='_btn3Black'){
+      btn3_.setAttribute('class','_btn3Gradient');
+      document.getElementById('svgAlphabet1').style.strokeWidth='2px';
+      document.getElementById('svgAlphabet2').style.strokeWidth='2px';
+    };
+// ********mobile
 };
+
 btn1.addEventListener('mouseover', function(){
   document.getElementById('inp').style.color='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
   btn1.style.background=document.getElementById('inp').style.color;
@@ -98,6 +96,11 @@ function selectBlendMode(){
   event.target.classList.add('black');
   inp.style.mixBlendMode = event.target.innerHTML;
   inp2.style.mixBlendMode = event.target.innerHTML;
+
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = event.target.innerHTML;
+    document.getElementById('svgAlphabet1').style.mixBlendMode = event.target.innerHTML;
+  }
 }
 
 function selectBlendModeSoftLight(){
@@ -109,8 +112,12 @@ function selectBlendModeSoftLight(){
   event.target.classList.add('black');
   inp.style.mixBlendMode = 'soft-light';
   inp2.style.mixBlendMode = 'soft-light';
-}
 
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = 'soft-light';
+    document.getElementById('svgAlphabet1').style.mixBlendMode = 'soft-light';
+  }
+}
 function selectBlendModeHardLight(){
 
   if(document.querySelector('.black')){
@@ -120,8 +127,12 @@ function selectBlendModeHardLight(){
   event.target.classList.add('black');
   inp.style.mixBlendMode = 'hard-light';
   inp2.style.mixBlendMode = 'hard-light';
-}
 
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = 'hard-light';
+    document.getElementById('svgAlphabet1').style.mixBlendMode = 'hard-light';
+  }
+}
 function selectBlendModeDodge(){
 
   if(document.querySelector('.black')){
@@ -131,8 +142,12 @@ function selectBlendModeDodge(){
   event.target.classList.add('black');
   inp.style.mixBlendMode = 'color-dodge';
   inp2.style.mixBlendMode = 'color-dodge';
-}
 
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = 'color-dodge';
+    document.getElementById('svgAlphabet1').style.mixBlendMode = 'color-dodge';
+  }
+}
 function selectBlendModeBurn(){
 
   if(document.querySelector('.black')){
@@ -142,14 +157,23 @@ function selectBlendModeBurn(){
   event.target.classList.add('black');
   inp.style.mixBlendMode = 'color-burn';
   inp2.style.mixBlendMode = 'color-burn';
-}
 
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = 'color-burn';
+    document.getElementById('svgAlphabet1').style.mixBlendMode = 'color-burn';
+  }
+}
 function noneBlend(){
   if(document.querySelector('.black')){
     document.querySelector('.black').classList.remove('black');
   }
   inp.style.mixBlendMode = 'normal';
   inp2.style.mixBlendMode = 'normal';
+
+  if(window.matchMedia('(max-width:500px)')){
+    document.getElementById('svgAlphabet2').style.mixBlendMode = 'normal';
+    document.getElementById('svgAlphabet1').style.mixBlendMode = 'normal';
+  }
 }
 
 document.getElementById('info').addEventListener('mouseover', function(){
@@ -160,3 +184,26 @@ document.getElementById('info').addEventListener('mouseout', function(){
   document.getElementById('infoTxt').style.opacity='0';
   document.getElementById('infoTxt').style.transform='scale(0)';
 })
+
+
+
+//*********** MOBILE ***********//
+
+var m1 = window.matchMedia('(min-width:500px)');
+var m2 = window.matchMedia('(max-width:500px)');
+
+btn1_.addEventListener('touchstart', function(){
+  document.getElementById('svgAlphabet1').style.fill='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+  btn1_.style.backgroundColor = document.getElementById('svgAlphabet1').style.fill;
+});
+
+btn2_.addEventListener('touchstart', function(){
+  document.getElementById('svgAlphabet2').style.fill='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+  btn2_.style.backgroundColor = document.getElementById('svgAlphabet2').style.fill;
+});
+
+btn3_.addEventListener('touchstart', function(){
+  btnStroke();
+});
+
+

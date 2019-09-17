@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width">
+    <!-- , initial-scale=1 -->
     <title>Шрифты</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <div id="featureDiv">
-        <img id='feature' src="img/feature.svg" alt="" srcset="">
+            <img id='feature2' src="img/mobile/feature.svg" media='(max-width:500px)' >
+            <img id='feature' src="img/feature.svg" alt="" srcset="">
     </div>
  
     <div class='fontTitle'>
         <hr class="line1">
-        <a href='blend.html'><img id='name-blend' src="img/n1-blend.png" alt="" srcset=""></a>
+        <a href='blend.html'>
+            <picture>
+                <source srcset='img/mobile/blend.svg' media='(max-width:500px)'> 
+                <img id='name-blend' src="img/n1-blend.png" alt="" srcset="" media='(min-width:500px)'>
+            </picture>            
+        </a>
         <img id='n1-art' src="img/n1/art.png" alt="" srcset="">
         <img id='n1-plastik' src="img/n1/plastik.png" alt="" srcset="">
         <img id='n1-maket' src="img/n1/maket.png" alt="">
         <video autoplay loop id='n1-video'>
            <source autoplay loop src="img/preview.mp4">
         </video>
-        <p class='font-name' autoplay loop muted>смешанный</p>
+        <!-- <p class='font-name'>смешанный</p> -->
         <hr class='line2'>
     </div>    
 
-    <div class='empty' style='margin-top:0px; margin-bottom:0px;'>&nbsp;</div>
+    <!-- <div class='empty' style='margin-top:0px; margin-bottom:0px;'>&nbsp;</div> -->
     
     <div class='fontTitle'>
         <hr class='line2'>
-        <p class='font-name'>скоро непонятный</p>
+        <p class='font-anonce'>скоро фирменный</p>
         <img id='n1-hero' src="img/n1-hero.png" alt="" srcset="">
         <hr class="line1">
     </div>

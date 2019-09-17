@@ -13,3 +13,10 @@ nameBlend.addEventListener('mouseout', function(){
     document.getElementById('n1-maket').style.display = 'none';
     document.getElementById('n1-video').style.display = 'none';
 });
+
+var feature2 = document.getElementById('feature2');
+feature2.addEventListener('touchstart',  function(){
+    feature2.setAttribute('src','img/mobile/feature2.svg');
+
+});
+
