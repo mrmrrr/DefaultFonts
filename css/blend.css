@@ -96,11 +96,7 @@
         line-height: 1.1;
         
     }
-    #back{
-        padding-top:200px;
-        background-color:black;
-        height:fit-content;
-    }
+  
     /************* container original *************/
         
     #container{
@@ -196,30 +192,19 @@
 
     /************* container original *************/
 
-
-    #_grid2>*{
-        margin:0;
+    #back{
+        background-color:black;
     }
-    #_grid2{
-        display:-ms-grid;
-        display:grid;
-        -ms-grid-rows: -webkit-fit-content 1fr 1fr;
-        -ms-grid-rows: fit-content 1fr 1fr;
-        grid-template-rows: -webkit-fit-content 1fr 1fr;
-        grid-template-rows: fit-content 1fr 1fr;
-        margin:0 auto;
-        width:60vw;
+    #backPack{
+        padding-top:10vw;
+        position: relative;
+        top:0;
+        display: flex;
+        justify-content:center; 
+        background-color:black;
+        z-index: 0;
     }
 
-    #_row2{
-        display:-ms-grid;
-        display:grid;
-        -ms-grid-columns: 29.4% 41.2% 29.4%;
-        grid-template-columns: 29.4% 41.2% 29.4%;
-    }
-    #_row2_c2{
-        display:block;
-    }
     #_row3{
         position: relative;
     }
@@ -270,12 +255,12 @@
         justify-content: center;
         align-items: center;
         height:4vw;
-        top:50%;
+        bottom:30%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
-        z-index: 1;
+        z-index: 5;
         background-color: rgb(255, 255, 255);
     }
     .downloadDescription{
@@ -370,6 +355,7 @@
         justify-content: space-evenly;
         height:100px;
         align-items: center;
+        z-index: 2;
         /* margin-bottom:50px; */
     }
     .allFonts{
@@ -397,9 +383,15 @@
         color: #FF6B49;
     } 
 
-
-    #_fea, #_main, #_mods, #_alphabet, #_container,
-    #_back, #_bottomMenum{
+    #_main,#svgAlphabet, #_fea,._descriptionFlex
+    #_zblend, #_3mobile, #_mods, ._rightMargin, #_ui, 
+    ._uiBtn, #_typeBlend, #_normal, ._btn3Gradient, 
+    ._btn3Black, #_alphabet, #_container, #_el1, #_el2, 
+    #_el3, #_back, ._abc, ._slider, #_containerInstruction,
+    #_videoInstr, #_plastik, #_infom, #_infoTxtm, 
+    ._downloadFlexm, #_downloadFontm, #_spanDownloadm,
+    #_bottomMenum, ._allFontsm, ._allFontsArrowm, 
+    ._linkDefaultm {
         display:none;
     }
 }
@@ -407,19 +399,20 @@
 
 /*********** MOBILE ********** */
 @media  (max-width:500px){
-    #svgAlphabet{
-        width:300%;
-    }
-    .slider, .slider::-webkit-slider-thumb,#row1, #row2,
+   
+     .slider, .slider::-webkit-slider-thumb,#row1, #row2,
     .insertDiv, .abc, .spanHover, #grid2,  #grid3, #container,
     .slider::-webkit-slider-thumb, #bottomMenu, .allFonts,
     .linkDefault, .allFontsArrow, #spanDownload, #downloadFont,
     .downloadDescription, .downloadFlex, #infoTxt, #info, 
-    #_row3, #_row2_c3, #_row2_c2, #_row2_c1, #_row2, #_row1,
-    #_grid2, #back, #alphabet, #mods, #main, #fea {
+    #back, #backPack, #alphabet, #mods, #main, #fea {
         display: none;
     }
 
+
+    #svgAlphabet{
+        width:300%;
+    }
 
     #_fea{
         background-color: #FF6B49;
@@ -619,7 +612,7 @@
         z-index: 100;
         width:100vw;
         top:0;
-        mix-blend-mode: overlay;
+        mix-blend-mode: soft-light;
     }
     
     
