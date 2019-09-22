@@ -84,6 +84,7 @@ body{
     }
 }
 
+
 @media  (max-width:500px){
     #svgBlend,#letters,#feature{
         display:none;
