@@ -101,16 +101,12 @@
         
     #container{
         /* margin-top:100px; */
-        display:-ms-grid;
         display:grid;
-        -ms-grid-columns:   90vw auto;
-        grid-template-columns: 90vw auto;
+        grid-template-columns: 80vw auto;
     }
 
     #grid2{
-        display:-ms-grid;
         display:grid;
-        -ms-grid-rows: 75vh 25vh;
         grid-template-rows: 75vh 25vh;
     }
     #grid2 > svg{
@@ -118,37 +114,24 @@
     }
     #grid3{
         background-color:#FF6C3B;
-
-        display:-webkit-box;
-
-        display:-ms-flexbox;
-
         display:flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
     }
     #row1{
         overflow: hidden;
     }
     #row2{
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
     }
     .abc{
         font-size:28pt;
         text-align: center;
         cursor: pointer;
+        padding:0;
+        margin:0;
     }
     .spanHover{
         background:black;
@@ -400,12 +383,12 @@
 /*********** MOBILE ********** */
 @media  (max-width:500px){
    
-     .slider, .slider::-webkit-slider-thumb,#row1, #row2,
+    .slider, .slider::-webkit-slider-thumb,#row1, #row2,
     .insertDiv, .abc, .spanHover, #grid2,  #grid3, #container,
     .slider::-webkit-slider-thumb, #bottomMenu, .allFonts,
     .linkDefault, .allFontsArrow, #spanDownload, #downloadFont,
     .downloadDescription, .downloadFlex, #infoTxt, #info, 
-    #back, #backPack, #alphabet, #mods, #main, #fea {
+    #back, #backPack, #alphabet, #mods, #main, #fea,#artDesktop {
         display: none;
     }
 
@@ -601,10 +584,10 @@
     #_videoInstr{
         display:flex;
         position:absolute;
-        top:10vw;
+        top:12%;
         justify-content: center;
         align-content: center;
-        width:100%;
+        /* width:100%; */
         z-index: 0;
     }
     #_plastik{
