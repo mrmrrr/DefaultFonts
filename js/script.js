@@ -1,22 +1,34 @@
-var nameBlend = document.getElementById('name-blend');
+var feature = document.getElementById('feature');
 
-nameBlend.addEventListener('mouseover', function(){
-    document.getElementById('n1-art').style.display = 'inline';
-    document.getElementById('n1-plastik').style.display = 'inline';
-    document.getElementById('n1-maket').style.display = 'inline';
-    document.getElementById('n1-video').style.display = 'inline';
-});
+document.getElementById('svgBlend').addEventListener('mouseover',function(){
+    document.getElementById('g1').style.transform='translateX(-50px)';
+})
+document.getElementById('svgBlend').addEventListener('mouseout',function(){
+    document.getElementById('g1').style.transform='translateX(+50px)';
+})
 
-nameBlend.addEventListener('mouseout', function(){
-    document.getElementById('n1-art').style.display = 'none';
-    document.getElementById('n1-plastik').style.display = 'none';
-    document.getElementById('n1-maket').style.display = 'none';
-    document.getElementById('n1-video').style.display = 'none';
-});
+
+// document.querySelector('.fontTitle').addEventListener('mouseover',function(){
+//     document.getElementById('name-blend').style.opacity='1';
+// })
+// document.querySelector('.fontTitle').addEventListener('mouseout',function(){
+//     document.getElementById('name-blend').style.opacity='0';
+// })
+
+document.getElementById('letters').addEventListener('mouseover',function(){
+    document.getElementById('letters').style.opacity='1';
+})
+document.getElementById('letters').addEventListener('mouseout',function(){
+    document.getElementById('letters').style.opacity='0';
+})
+
+// document.getElementById('name-blend').addEventListener('mouseover', function(){
+//     document.getElementById('name-blend').children; 
+// })
+
 
 var feature2 = document.getElementById('feature2');
 feature2.addEventListener('touchstart',  function(){
     feature2.setAttribute('src','img/mobile/feature2.svg');
 
 });
-
