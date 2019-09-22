@@ -183,9 +183,11 @@ body{
     margin-left:5vw;
 }
 #about>a:link{
+    color:black;
     text-decoration: none;
 }
 #about>a:visited{
+    text-decoration: none;
     color:black;
 }
 #about>a:hover{
