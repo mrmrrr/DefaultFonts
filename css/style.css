@@ -176,6 +176,7 @@ body{
 }
 #about{
     font-family: Arial, Helvetica, sans-serif;
+    color:black;
     margin-bottom: 3vw;
     margin-top: 2vw;
 
@@ -191,6 +192,7 @@ body{
     color:black;
 }
 #about>a:hover{
+    color:black;
     text-decoration:line-through ;
 }
 
