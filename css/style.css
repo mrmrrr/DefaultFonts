@@ -8,14 +8,16 @@ body{
     font-weight: normal;
     src: url('../doc/Blend_REGULAR.woff') format("woff");
 }
-
 @font-face{
     font-family: Blend;
     font-style: italic;
     font-weight: normal;
     src: url('../doc/Blend_ITALIC.woff') format("woff");
 }
+
+
 @media  (min-width:500px){
+    
     #featureDiv{
         display:flex;
         justify-content: center;
@@ -58,7 +60,8 @@ body{
         content: url('/img/translate.png');
     }*/
     #name-blend-wrap::after{
-        content: url('img/arr.png');
+        content: url(img/arr.png);
+        display:block;
     }
 
     #g1{
