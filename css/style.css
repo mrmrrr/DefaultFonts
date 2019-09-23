@@ -58,7 +58,7 @@ body{
         content: url('/img/translate.png');
     }*/
     #name-blend-wrap::after{
-        content: url('/img/translate.png');
+        content: url('img/arr.png');
     }
 
     #g1{
