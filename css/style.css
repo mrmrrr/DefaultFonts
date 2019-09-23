@@ -58,6 +58,7 @@ body{
 
     #about{
         font-family: Arial, Helvetica, sans-serif;
+        color:black;
         margin-bottom: 3vw;
         margin-top: 2vw;
 
@@ -65,6 +66,7 @@ body{
         margin-left:5vw;
     }
     #about>a:link{
+        color:black;
         text-decoration: none;
     }
     #about>a:visited{
@@ -72,6 +74,7 @@ body{
         color:black;
     }
     #about>a:hover{
+        color:black;
         text-decoration:line-through ;
     }
 
@@ -211,6 +214,7 @@ body{
     }
 
     #about{
+        color:black;
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 3vw;
         margin-top: 2vw;
@@ -220,14 +224,15 @@ body{
     }
     #about>a:link{
         text-decoration: none;
+        color:black;
     }
     #about>a:visited{
         text-decoration: none;
         color:black;
     }
     #about>a:hover{
-        /* text-decoration:line-through ; */
-        text-decoration-style: wavy;
+        text-decoration:line-through ;
+        color:black;
     }
 }
 /* *{border:1px solid red;} */
