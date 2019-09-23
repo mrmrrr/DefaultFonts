@@ -54,7 +54,10 @@ body{
     .fontTitle>a{
         text-decoration: none;
     }
-    .fontTitle>a::after{
+    /*.fontTitle>a::after{
+        content: url('/img/translate.png');
+    }*/
+    #name-blend-wrap::after{
         content: url('/img/translate.png');
     }
 
