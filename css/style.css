@@ -56,14 +56,10 @@ body{
     .fontTitle>a{
         text-decoration: none;
     }
-    /*.fontTitle>a::after{
-        content: url('/img/translate.png');
-    }*/
-    #name-blend-wrap::after{
-        content: url(img/arr.png);
-        display:block;
+    .fontTitle>a::after{
+        content: url('../img/translate.png');
     }
-
+    
     #g1{
         transition: transform 0.5s ease-in-out;
     }
