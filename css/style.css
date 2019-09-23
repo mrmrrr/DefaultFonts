@@ -51,6 +51,12 @@ body{
         z-index: 10;
         opacity:1;
     }
+    .fontTitle>a{
+        text-decoration: none;
+    }
+    .fontTitle>a::after{
+        content: url('/img/arr.png');
+    }
 
     #g1{
         transition: transform 0.5s ease-in-out;
@@ -97,7 +103,7 @@ body{
     #soonZag>p{
         margin:0;
         font-size: 14pt;
-        /* color:#26FF37; */
+        color:#26FF37;
     }
     #soon{
         padding-top: 20px;
@@ -109,6 +115,7 @@ body{
         height:1px;
         overflow: hidden;
         border-top:20px #26FF37 solid;
+        /* border-top:20px #B5FF17 solid; */
         transition: height 1s ease-in-out;
     }
     #new{
@@ -174,6 +181,7 @@ body{
         z-index: 10;
         opacity:1;
     }
+  
 
     #soonZag{
         padding-left: 2vw;
