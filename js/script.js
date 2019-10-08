@@ -1,6 +1,8 @@
 var feature = document.getElementById('feature');
 var newFont = document.getElementById('new');
 var firmFont = document.getElementById('firm');
+var blendFont = document.getElementById('name-blend');
+
 
 document.getElementById('svgBlend').addEventListener('mouseover',function(){
     document.getElementById('g1').style.transform='translateX(-50px)';
@@ -18,7 +20,7 @@ document.getElementById('svgBlendMobile').addEventListener('touchend',function()
 
 // ************************АНОНС
 document.getElementById('soon').addEventListener('mouseover',function(){
-    document.getElementById('soon').style.height='400vh';
+    document.getElementById('soon').style.height='220vh';
 })
 newFont.addEventListener('mouseover', function(){
     document.getElementById('gifNewFont').style.opacity='1';
@@ -28,24 +30,32 @@ newFont.addEventListener('mouseleave', function(){
 })
 
 firmFont.addEventListener('mouseover',function(){
-    firmFont.setAttribute('src','img/newindex/firmHover.svg');
+    firmFont.setAttribute('src','img/newindex/firm-gorizont-hover.svg');
 })
 firmFont.addEventListener('mouseleave',function(){
-    firmFont.setAttribute('src','img/newindex/firm.svg');
+    firmFont.setAttribute('src','img/newindex/firm-gorizont.svg');
 })
 
-    //mobile
+    blendFont.addEventListener('mouseover',function(){
+       blendFont.setAttribute('src','img/newindex/blendNameHover.svg');
+    })
+    blendFont.addEventListener('mouseleave',function(){
+       blendFont.setAttribute('src','img/newindex/blendName.svg');
+    })
+
+
+//mobile
 newFont.addEventListener('touchstart', function(){
     document.getElementById('gifNewFont').style.opacity='1';
 })
 newFont.addEventListener('touchend', function(){
     document.getElementById('gifNewFont').style.opacity='1';
 })
-firmFont.addEventListener('touchstart',function(){
-    firmFont.setAttribute('src','img/newindex/firmHover.svg');
-})
+// firmFont.addEventListener('touchstart',function(){
+//     firmFont.setAttribute('src','img/newindex/firmHover.svg');
+// })
 firmFont.addEventListener('touchend',function(){
-    firmFont.setAttribute('src','img/newindex/firm.svg');
+    firmFont.setAttribute('src','img/newindex/firm-gorizont-hover.svg');
 })
 // ************************АНОНС_END
 

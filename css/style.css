@@ -15,6 +15,7 @@ body{
     font-weight: normal;
     src: url('../doc/Blend_ITALIC.woff') format("woff");
 }
+
 @media  (min-width:500px){
     #featureDiv{
         display:flex;
@@ -39,11 +40,18 @@ body{
     }
 
     .fontTitle{
-        height:60vh;
+        height:auto;
         position: relative;
-        padding-left:5vw;
-        margin-top: 100px;
-        /* margin-bottom: 100px; */
+        padding-left:3vw;
+        /* margin-top: 100px; */
+        margin-bottom: 100px;
+    }
+    .fontTitle>a{
+        text-decoration: none;
+    }
+    .fontTitle>a::after{
+        content: url('../img/arr.png');
+        top:0;
     }
 
     #name-blend{
@@ -51,13 +59,7 @@ body{
         z-index: 10;
         opacity:1;
     }
-    .fontTitle>a{
-        text-decoration: none;
-    }
-    .fontTitle>a::after{
-        content: url('/img/arr.png');
-    }
-
+   
     #g1{
         transition: transform 0.5s ease-in-out;
     }
@@ -99,6 +101,7 @@ body{
         align-items: flex-start;
         /* border-bottom: 1px black solid; */
         margin-bottom: 1vw;
+        margin-top:100px;
     }
     #soonZag>p{
         margin:0;
@@ -159,12 +162,18 @@ body{
     }
 
     .fontTitle{
-        height:60vh;
+        height:auto;
         position: relative;
-        padding-left:5vw;
-        margin-top: 50px;
-        /* margin-bottom: 100px; */
+        padding-left:3vw;
+        margin-bottom: 100px;
     }
+    .fontTitle>a{
+        text-decoration: none;
+    }
+    .fontTitle>a::after{
+        content: url('../img/arr.png');
+    }
+
     #svgContainer{
         width:95%;
         height: fit-content;
@@ -209,7 +218,7 @@ body{
         transition: height 1s ease-in-out;
     }
     #new{
-        height:200vh;
+        height:100vh;
         display:inline-block;
     }
     #gifNewFont{
