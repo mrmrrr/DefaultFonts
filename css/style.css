@@ -8,7 +8,6 @@ body{
     font-weight: normal;
     src: url('../doc/Blend_REGULAR.woff') format("woff");
 }
-
 @font-face{
     font-family: Blend;
     font-style: italic;
@@ -17,6 +16,7 @@ body{
 }
 
 @media  (min-width:500px){
+    
     #featureDiv{
         display:flex;
         justify-content: center;
@@ -59,7 +59,7 @@ body{
         z-index: 10;
         opacity:1;
     }
-   
+    
     #g1{
         transition: transform 0.5s ease-in-out;
     }
