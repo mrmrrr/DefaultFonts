@@ -18,6 +18,27 @@ document.getElementById('svgBlendMobile').addEventListener('touchend',function()
     document.getElementById('g1_').style.transform='translateY(0px)';
 })
 
+
+document.getElementById('FIRST').addEventListener('mouseover',function(){
+    for(i=0;i<document.getElementById('FIRST').children.length;i++){
+        document.getElementById('FIRST').children[i].style.fill = '#1A243F';
+    }
+})
+document.getElementById('FIRST').addEventListener('mouseout',function(){
+    document.getElementById('FIRST').children[0].style.fill='#436CFF';
+    document.getElementById('FIRST').children[1].style.fill = '';
+    document.getElementById('FIRST').children[2].style.fill = '';
+    document.getElementById('FIRST').children[3].style.fill = '#1A243F';
+})
+
+document.getElementById('LAST').addEventListener('mouseover',function(){
+    document.getElementById('LAST').children[0].style.fill='#17FFF1';
+    // document.getElementById('LAST').children[0].style.stroke='';
+})
+document.getElementById('LAST').addEventListener('mouseout',function(){
+    document.getElementById('LAST').children[0].style.fill='';
+})
+
 // ************************АНОНС
 document.getElementById('soon').addEventListener('mouseover',function(){
     document.getElementById('soon').style.height='220vh';

@@ -14,6 +14,10 @@ body{
     font-weight: normal;
     src: url('../doc/Blend_ITALIC.woff') format("woff");
 }
+@font-face{
+    font-family: FirmFont;
+src: url('../doc/firm.woff') format('woff');
+}
 
 @media  (min-width:500px){
     
@@ -134,7 +138,7 @@ body{
         width: fit-content;
         height: fit-content;
     }
-   
+ 
 }
 
 
