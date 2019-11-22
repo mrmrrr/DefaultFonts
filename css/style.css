@@ -1,3 +1,5 @@
+/* *{border:1px solid red;} */
+/* #fontsDiv>*{border:1px solid red;} */
 body{
     margin:0;
     font-family: SF Pro Display, sans-serif;
@@ -6,28 +8,102 @@ body{
     font-family: Blend;
     font-style: normal;
     font-weight: normal;
-    src: url('../doc/Blend_REGULAR.woff') format("woff");
+    src: url('../doc/Blend_REGULAR.woff') format('woff');
 }
 @font-face{
     font-family: Blend;
     font-style: italic;
     font-weight: normal;
-    src: url('../doc/Blend_ITALIC.woff') format("woff");
+    src: url('../doc/Blend_ITALIC.woff') format('woff');
 }
 @font-face{
     font-family: FirmFont;
-src: url('../doc/firm.woff') format('woff');
+    src: url('/doc/firm.woff') format('woff');
 }
-
 @media  (min-width:500px){
-    
+  
     #featureDiv{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        display:grid;
         height:100vh;
-        /* width:100%; */
+        /* flex-direction: column;
+        justify-content:center;
+        align-items: center; */
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh repeat(2, 45vh);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
+    #div1{
+        margin:auto;
+        /* position: fixed; */
+        /* background-color:palegreen; */
+    }
+    #div2{
+        display:flex;
+        justify-content:center;
+        align-items: center; 
+        text-align: center;
+        /* background-color: papayawhip; */
+    }
+    #div3{
+        display:flex;
+        justify-content:center;
+        align-items: center; 
+        background-color: black;
+        text-align:center;
+    }
+
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ШРИФТЫ */
+    #fontsDiv{
+        display:grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height:100vh;
+    }
+    #Fdiv1 { 
+        display:flex;
+        justify-content:center;
+        align-items: center; 
+        /* margin-top:2vh; */
+        height:100vh;
+        text-align: center;
+        position: fixed;
+    }
+    #Fdiv2 { 
+        /* display:flex; */
+        /* justify-content:center; */
+        /* align-items: center; */
+        grid-area: 1/2/2/2;
+    }
+
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!БУКВЫ */
+    #lettersDiv{
+        display:grid;
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 100vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height:100vh;
+    }
+    #Ldiv1 { 
+        grid-area: 1/1/2/2;
+    }
+    #Ldiv2 { 
+        display:flex;
+        justify-content:center;
+        align-items: center; 
+        height:100vh;
+        position: fixed;
+        right:0%;
+        top:0%;
+        text-align: center;
+        width:10%;
+    }
+    
+
+
     #feature{
         /* position: absolute; */
         width:60vw;
@@ -45,10 +121,10 @@ src: url('../doc/firm.woff') format('woff');
 
     .fontTitle{
         height:auto;
-        position: relative;
-        padding-left:3vw;
-        /* margin-top: 100px; */
+        /* position: relative; */
+        /* padding-left:3vw; */
         margin-bottom: 100px;
+        /* margin-top:20px; */
     }
     .fontTitle>a{
         text-decoration: none;
@@ -91,54 +167,25 @@ src: url('../doc/firm.woff') format('woff');
     }
 
     #svgContainer{
-        width:fit-content;
-        height: fit-content;
+        /* width:fit-content; */
+        /* height: fit-content; */
+        /* padding-left:3vw; */
     }
+    #green{
+        /* transform:translateX(50px); */
+        /* transition: transform 0.5s; */
+        animation: blend 3s infinite ease-in-out;
+    }
+    @keyframes blend {
+        0%{transform:translateX(0px);}
+        30%{transform:translateX(50px);}
+        70%{transform:translateX(0px);}
+        100%{transform:translateX(0px);}
+    }
+
     #svgBlendMobile{
         display:none;
     }
-    #soonZag{
-        padding-left: 2vw;
-        padding-right: 2vw;
-        display:flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        /* border-bottom: 1px black solid; */
-        margin-bottom: 1vw;
-        margin-top:100px;
-    }
-    #soonZag>p{
-        margin:0;
-        font-size: 14pt;
-        color:#26FF37;
-    }
-    #soon{
-        padding-top: 20px;
-        display:flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        /* transform-origin: top center; */
-        /* transform: scaleY(1); */
-        height:1px;
-        overflow: hidden;
-        border-top:20px #26FF37 solid;
-        /* border-top:20px #B5FF17 solid; */
-        transition: height 1s ease-in-out;
-    }
-    #new{
-        height:200vh;
-        display:inline-block;
-    }
-    #gifNewFont{
-        /* display: inline-block; */
-        position:absolute;
-        top:25%;
-        opacity:1;
-        z-index: -1;
-        width: fit-content;
-        height: fit-content;
-    }
- 
 }
 
 
@@ -183,7 +230,7 @@ src: url('../doc/firm.woff') format('woff');
         height: fit-content;
     }
     #svgBlendMobile{
-        width:100%;
+        /* width:100%; */
     }
    
     #g1_{
@@ -256,4 +303,3 @@ src: url('../doc/firm.woff') format('woff');
         color:black;
     }
 }
-/* *{border:1px solid red;} */
