@@ -40,16 +40,3 @@ color2.addEventListener('mouseover', function(){
 
 document.getElementById('firmVideo').play();
 
-// document.getElementById('svgBlend').addEventListener('mouseover',function(){
-//     document.getElementById('g1').style.transform='translateX(-50px)';
-// })
-// document.getElementById('svgBlend').addEventListener('mouseout',function(){
-//     document.getElementById('g1').style.transform='translateX(+50px)';
-// })
-
-// document.getElementById('svgBlendMobile').addEventListener('touchstart',function(){
-//     document.getElementById('g1_').style.transform='translateY(+59px)';
-// })
-// document.getElementById('svgBlendMobile').addEventListener('touchend',function(){
-//     document.getElementById('g1_').style.transform='translateY(0px)';
-// })
