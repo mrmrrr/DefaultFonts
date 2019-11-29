@@ -189,12 +189,8 @@ body{
 /* ☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎☎ */
 
 @media  (max-width:500px){
-    #featureDiv{
+    #d, #featureDiv{
         display:none;
-    }
-
-    body{
-        margin: 0;   
     }
 
     #div1m{
@@ -218,6 +214,9 @@ body{
         padding:0;
         height:90vh;
     }
+    a:visited{
+        color:black;
+    }
 
     #fonts-top{
         position:fixed;
@@ -226,19 +225,18 @@ body{
         align-items: center;
         width: 100%;
         height:10vh;
-        font-size: 20pt;
+        font-size: 10pt;
     }
-
+    
     #Fdiv1 { 
         display:flex;
+        flex-direction: column;
         justify-content:center;
         align-items: center; 
-        /* margin-top:2vh; */
         width:30vw;
         height:100vh;
-        text-align: center;
         position: fixed;
-        /* top:0; */
         background-color:black;
     }
+    #Fdiv1>img{margin:0;}
 }
