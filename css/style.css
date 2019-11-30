@@ -19,14 +19,47 @@ body {
 	font-family: FirmFont;
 	src: url("/doc/firm.woff") format("woff");
 }
-a{
-    color:black;
+a {
+	color: black;
 }
-a:visited{
-    color:black;
+a:visited {
+	color: black;
 }
 @media (min-width: 500px) {
     
+	/* #region  INDEX HTML */
+	#featureDiv {
+		display: grid;
+		height: 100vh;
+		/* flex-direction: column;
+        justify-content:center;
+        align-items: center; */
+		grid-template-columns: 100%;
+		grid-template-rows: 10vh repeat(2, 45vh);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	#div1 {
+		margin: auto;
+		/* position: fixed; */
+		/* background-color:palegreen; */
+	}
+	#div2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		/* background-color: papayawhip; */
+	}
+	#div3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		text-align: center;
+	}
+	/* #endregion */
+
 	#container {
 		margin-left: 10vw;
 		padding-top: 5vh;
@@ -51,8 +84,8 @@ a:visited{
 		font-weight: 900;
 		font-size: 12vh;
 		line-height: 0.8;
-    }
-    
+	}
+
 	#firmVideo {
 		margin: 0;
 	}
@@ -105,11 +138,9 @@ a:visited{
 		display: none;
 	}
 	/* #endregion */
-
 }
 
 @media (max-width: 500px) {
-    
 	#d {
 		display: none;
 	}
