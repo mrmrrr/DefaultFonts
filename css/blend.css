@@ -115,6 +115,7 @@
     #grid3{
         background-color:#FF6C3B;
         display:flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }

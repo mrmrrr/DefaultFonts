@@ -96,7 +96,7 @@ a:visited {
 	}
 	#color2 {
 		color: #2dfea6;
-		/* -webkit-text-stroke:5px  black; */
+		/* -webkit-text-stroke:5px  black; */#m
 	}
 
 	/* #region  LETTERS HTML */
@@ -152,9 +152,7 @@ a:visited {
 		display: none;
 	}
 
-	#m {
-		display: none;
-	}
+	
 	/* #endregion */
 }
 
