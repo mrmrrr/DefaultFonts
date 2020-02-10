@@ -85,11 +85,21 @@ a:visited {
 		font-size: 12vh;
 		line-height: 0.8;
 	}
-
+	#lettersHeader{
+		display:flex;
+		justify-content: center;
+		padding-top:20vh;
+	}
 	#firmVideo {
 		margin: 0;
 	}
-
+	#fonts-top{
+		margin-top:10vh;
+		margin-left: 10vw;
+		padding:0 1vw 0 1vw;
+		position:fixed;
+		background-color:white;
+	}
 	#color1 {
 		color: #ff156e;
 		/* -webkit-text-stroke:5px  black; */
@@ -101,31 +111,16 @@ a:visited {
 
 	/* #region  LETTERS HTML */
 	#lettersDiv {
-		display: grid;
-		grid-template-columns: 90% 10%;
-		grid-template-rows: 100vh;
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
-		height: 100vh;
-		
-		/* border:1px solid red; */
-	}
-	#Ldiv1 {
-		grid-area: 1/1/2/2;
-		padding:10px;
 		margin-top:10vh;
 	}
 	
 	.imgLetter{
-		float:left;
-		margin-right:10px;
-		margin-bottom:10px;
+		margin:20px;
 	}
 	.flexLetters{
 		display:flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-content: center;
-		/* margin-bottom:10px; */
 	}
 
 	#Ldiv2 {
