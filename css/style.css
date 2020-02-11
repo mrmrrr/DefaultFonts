@@ -29,7 +29,33 @@ a:visited {
 	#mob{
 		display:none;
 	}
-
+	#featureDiv {
+		display: grid;
+		height: 100vh;
+		/* flex-direction: column;
+        justify-content:center;
+        align-items: center; */
+		grid-template-columns: 100%;
+		grid-template-rows: 10vh repeat(2, 45vh);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+	#div1 {
+		margin: auto;
+	}
+	#div2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	#div3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: black;
+		text-align: center;
+	}
 	#container {
 		margin-left: 2vw;
 		padding-top: 5vh;
