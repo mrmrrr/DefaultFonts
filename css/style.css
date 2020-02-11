@@ -95,7 +95,7 @@ a:visited {
 	}
 	#fonts-top{
 		margin-top:10vh;
-		margin-left: 10vw;
+		margin-left: 2vw;
 		padding:0 1vw 0 1vw;
 		position:fixed;
 		background-color:white;
@@ -104,23 +104,24 @@ a:visited {
 		color: #ff156e;
 		/* -webkit-text-stroke:5px  black; */
 	}
-	#color2 {
+	/* #color2 { */
 		color: #2dfea6;
 		/* -webkit-text-stroke:5px  black; */
 	}
 
 	/* #region  LETTERS HTML */
 	#lettersDiv {
-		margin-top:10vh;
+		margin-top:15vh;
 	}
 	
 	.imgLetter{
 		margin:20px;
+		flex-grow: 1;
 	}
 	.flexLetters{
 		display:flex;
-		justify-content: space-evenly;
-		align-content: center;
+		/* justify-content: space-evenly; */
+		/* align-content: center; */
 	}
 
 	#Ldiv2 {
