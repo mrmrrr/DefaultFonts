@@ -23,15 +23,3 @@ lettersF.addEventListener('mouseover', function(){
 lettersF.addEventListener('mouseout', function(){
     document.getElementById('letters-hover').style.opacity='0';
 })
-
-if(document.getElementById('m')){
-    document.addEventListener('touchmove',function(){
-        document.getElementById('fontsHover').setAttribute('src','img/new/fontsVerticalHover.svg')
-        document.getElementById('lettersHover').setAttribute('src','img/new/lettersVerticalHover.svg')
-    })
-    document.addEventListener('touchend', function(){
-        document.getElementById('fontsHover').setAttribute('src','img/new/fontsVertical.svg')
-        document.getElementById('lettersHover').setAttribute('src','img/new/lettersVertical.svg')
-    })
-}
-
