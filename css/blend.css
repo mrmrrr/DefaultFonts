@@ -6,7 +6,7 @@
     #featureBlend{
         width:100%;
     }
-    .descriptionFlex{
+    /* .descriptionFlex{
         position:absolute;
         display:flex;
         justify-content: center;
@@ -19,14 +19,14 @@
         right: 0;
         z-index: 1;
         background-color: rgb(255, 255, 255);
-    }
-    .description{
+    } */
+    /* .description{
         font-size: 2.5vw;
         font-weight: 300;
         color: black;
         text-align: center;
         background-color: rgb(255, 255, 255);
-    }
+    } */
 
     #mods{
         margin-left:5%;
@@ -402,7 +402,7 @@
         background-color: #FF6B49;
     }
   
-    ._descriptionFlex{
+    /* ._descriptionFlex{
         position:absolute;
         display:flex;
         justify-content: center;
@@ -415,14 +415,14 @@
         right: 0;
         z-index: 1;
         background-color: rgb(255, 255, 255);
-    }
-    ._description{
+    } */
+    /* ._description{
         font-size: 5vw;
         font-weight: 300;
         color: black;
         text-align: center;
         background-color: rgb(255, 255, 255);
-    }
+    } */
     #_zblend{
         position: absolute;
         width: 50.95%;

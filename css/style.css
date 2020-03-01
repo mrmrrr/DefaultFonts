@@ -73,7 +73,7 @@ a:visited {
 	}
 
 	.fontTitle {
-		height: 30vh;
+		height:fit-content;
 	}
 	.fontZag {
 		font-family: sf pro display;
