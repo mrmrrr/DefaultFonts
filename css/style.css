@@ -112,6 +112,9 @@ a:visited {
 		margin:20px;
 		flex-grow: 1;
 	}
+	.imgLetterJpg{
+		width:30%;
+	}
 	.flexLetters{
 		display:flex;
 	}
