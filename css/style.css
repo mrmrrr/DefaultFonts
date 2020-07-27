@@ -112,13 +112,23 @@ a:visited {
 		margin:20px;
 		flex-grow: 1;
 	}
-	.imgLetterJpg{
-		width:30%;
-	}
+	
 	.flexLetters{
 		display:flex;
 	}
 
+	.flexLettersIMG{
+		display:flex;
+		flex-wrap: wrap;
+		height:auto;
+		justify-content: center;
+		align-items: center;
+	}
+	.flexLettersIMG>img{
+		margin:10px;
+		width:30%;
+		object-fit: contain;
+	}
 	#Ldiv2 {
 		display: flex;
 		justify-content: center;
